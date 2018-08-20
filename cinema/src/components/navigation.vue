@@ -14,7 +14,7 @@
             <li><router-link to="/booking"><a href="#">Ticket Booking </a></router-link></li>
             </ul>
           <form class="navbar-form navbar-right" action="/action_page.php">
-            <li><a href="#">Login/Sign up?</a></li>
+            <li><router-link to="/login"><a href="#">Login/Sign up?</a></router-link></li>
             <div class="input-group">
              <input type="text" class="form-control" placeholder="Search" name="search" align="right">
               <div class="input-group-btn">

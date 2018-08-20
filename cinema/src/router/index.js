@@ -8,6 +8,7 @@ import Classification from '@/components/Classification'
 import Bookings from '@/components/Bookings'
 import avengers from '@/components/avengers'
 import Payment from '@/components/Payment'
+import Login from '@/components/Login'
 
 Vue.use(Router)
 
@@ -52,11 +53,11 @@ export default new Router({
       path: '/booking/payment',
       name: 'Payment',
       component: Payment
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: Login
     }
-    // {
-    //   path: '/login',
-    //   name: 'Login',
-    //   component: Login
-    // }
   ]
 })
