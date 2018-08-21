@@ -1,67 +1,99 @@
 <template>
+  <body style="background-color: #2c3e50">
   <div class="hello">
     <head>
       <title>QA Cinema</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-
-    <body style="background-color:black;">
-    <div>
-      <div class="container">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
-              <img src="https://vignette.wikia.nocookie.net/xmenmovies/images/e/e9/Deadpool-film-header-front-main-stage.jpg/revision/latest?cb=20150805032419" alt="Mission Impossible : Fallout" style="width:100%;">
-            </div>
-            <div class="item">
-              <img src="https://www.carnegielibrary.org/wp-content/uploads/2017/02/loganheader.png" alt="Incredibles 2" style="width:100%;">
-            </div>
-
-            <div class="item">
-              <img src="https://coverfiles.alphacoders.com/415/41555.jpg" alt="Power Rangers" style="width:100%;">
-            </div>
-          </div>
-          <!-- Left and right controls -->
-          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-          </a>
+        <navigation/>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="https://vignette.wikia.nocookie.net/xmenmovies/images/e/e9/Deadpool-film-header-front-main-stage.jpg/revision/latest?cb=20150805032419" alt="New York" width="100%" height="100px">
+        </div>
+        <div class="item">
+          <img src="http://s3.foxmovies.com/foxmovies/production/films/132/images/feature/logan-film-header-front-main-stage.jpg" alt="Chicago" width="100%" height="100px">
+        </div>
+        <div class="item">
+          <img src="http://www.twitrcovers.com/wp-content/uploads/2014/09/Godzilla-l.jpg" alt="Los Angeles" width="100%" height="100px">
+        </div>
+      </div>
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- columns -->
+    <div class="row">
+      <div class="column" style="background-color:#ccc">Column</div>
+      <div class="column" style="background-color:#bbb;">Column</div>
+      <div class="column" style="background-color:#ccc;">Column</div>
+    </div>
+    <!-- Container (Services Section) -->
+    <div id="services" class="container-fluid text-center" style="background-color:#aaa">
+      <h2>SERVICES</h2>
+       <br>
+      <div class="row slideanim" >
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-eye-open"></span>
+          <h4>Find Us</h4>
+          <button type="button">Click Me!</button>
+        </div>
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-heart logo-small"></span>
+          <h4>LOVE</h4>
+          <p>Lorem ipsum dolor sit amet..</p>
+        </div>
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-lock logo-small"></span>
+          <h4>JOB DONE</h4>
+          <p>Lorem ipsum dolor sit amet..</p>
+        </div>
+      </div>
+      <br><br>
+      <div class="row slideanim">
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-leaf logo-small"></span>
+          <h4>GREEN</h4>
+          <p>Lorem ipsum dolor sit amet..</p>
+        </div>
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-certificate logo-small"></span>
+          <h4>CERTIFIED</h4>
+          <p>Lorem ipsum dolor sit amet..</p>
+        </div>
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-wrench logo-small"></span>
+          <h4 style="color:#303030;">HARD WORK</h4>
+          <p>Lorem ipsum dolor sit amet..</p>
         </div>
       </div>
     </div>
 
-    <navigation/>
-
-    <div class="container">
-      <h3> <font color="white">Whats Happening........</font></h3><br>
-      <iframe width="800" height="500"
-              src="https://www.youtube.com/embed/ONHBaC-pfsk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-      </iframe>
-      <button type="button" class="btn btn-primary btn-block">Screens</button>
-
-    </div>
-  </body>
   </div>
+  </body>
 </template>
-<footer/>
+
 <script>
 import Navigation from './navigation'
-import footer from './footer'
+import Footer from './footer'
+
 export default {
   name: 'HelloWorld',
-  components: {Navigation, footer},
+  components: {Navigation, Footer},
   data () {
     return {
     }
@@ -70,70 +102,49 @@ export default {
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .button {
-    background-color: gray; /* Green */
-    border: none;
-    color: white;
-    padding: 16px 32px;
+  {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    /*background-image: url("../assets/maxresdefault.jpg");*/
+    background-blend-mode: lighten;
+  }
+  /* Style the header */
+  .header {
+    background-color: #f1f1f1;
+    padding: 30px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
+    font-size: 35px;
   }
 
-  .button1 {
-    background-color: white;
-    color: black;
-    border: 2px solid #4CAF50;
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
   }
 
-  .button1:hover {
-    background-color: #4CAF50;
-    color: white;
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 
-  .button2 {
-    background-color: white;
-    color: black;
-    border: 2px solid #008CBA;
+  /* Style the footer */
+  .footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
   }
 
-  .button2:hover {
-    background-color: #008CBA;
-    color: white;
-  }
-
-  .button3 {
-    background-color: white;
-    color: black;
-    border: 2px solid #f44336;
-  }
-
-  .button3:hover {
-    background-color: #f44336;
-    color: white;
-  }
-
-  .button4 {
-    background-color: white;
-    color: black;
-    border: 2px solid #e7e7e7;
-  }
-
-  .button4:hover {background-color: #e7e7e7;}
-
-  .button5 {
-    background-color: white;
-    color: black;
-    border: 2px solid #555555;
-  }
-
-  .button5:hover {
-    background-color: #555555;
-    color: white;
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
   }
 </style>

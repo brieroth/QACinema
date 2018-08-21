@@ -3,9 +3,9 @@
       <nav class="navbar navbar-inverse">
         <div class="container-fluid">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">QA Cinema</a>
+            <li><router-link to="/"><a class="navbar-brand" href="#">QA Cinema</a></router-link></li>
           </div>
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav" style="font-size: large" >
             <li class="active navbar-center"><router-link to="/"><a href="#">Home</a></router-link></li>
             <li ><router-link to="/listing"><a href="#">Listings Gallery</a></router-link></li>
             <li><router-link to="/opening"><a href="#">Opening Times </a></router-link></li>
@@ -36,5 +36,22 @@ export default {
 </script>
 
 <style scoped>
-
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0%;
+    overflow: hidden;
+  }
+  li {
+    float: left;
+  }
+  li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover {
+    background-color: #111;
+  }
 </style>

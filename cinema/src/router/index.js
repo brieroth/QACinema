@@ -6,7 +6,6 @@ import ListingsGallery from '@/components/ListingsGallery'
 import NewListings from '@/components/NewListings'
 import Classification from '@/components/Classification'
 import Bookings from '@/components/Bookings'
-import avengers from '@/components/avengers'
 import Payment from '@/components/Payment'
 import Login from '@/components/Login'
 
@@ -43,11 +42,6 @@ export default new Router({
       path: '/booking',
       name: 'Bookings',
       component: Bookings
-    },
-    {
-      path: '/avengers',
-      name: 'Avengers',
-      component: avengers
     },
     {
       path: '/booking/payment',
