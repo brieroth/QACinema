@@ -51,15 +51,16 @@
         </TR>
       </div>
     </TABLE>
-    <br><br> &copy;  &dot;<br><br><br><br><br>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import Navigation from './navigation'
+import Footer from './footer'
 export default {
   name: 'ListingsGallery',
-  components: {Navigation},
+  components: {Navigation, Footer},
   data () {
     return {
     }

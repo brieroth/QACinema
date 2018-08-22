@@ -47,14 +47,16 @@
     </div>
     </div>
     </body>
+    <Footer/>
   </div>
 </template>
 <script>
 import Navigation from './navigation'
+import Footer from './footer'
 /* eslint-disable */
 export default {
   name: 'ListingsGallery',
-  components: {Navigation},
+  components: {Navigation, Footer},
   data () {
     return {
     }

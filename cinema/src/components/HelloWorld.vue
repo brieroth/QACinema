@@ -1,6 +1,6 @@
 <template>
-  <body style="background-color: #2c3e50">
   <div class="hello">
+    <body style="background-color: transparent">
     <head>
       <title>QA Cinema</title>
       <meta charset="utf-8">
@@ -36,55 +36,26 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-    <!-- columns -->
-    <div class="row">
-      <div class="column" style="background-color:#ccc">Column</div>
-      <div class="column" style="background-color:#bbb;">Column</div>
-      <div class="column" style="background-color:#ccc;">Column</div>
-    </div>
-    <!-- Container (Services Section) -->
-    <div id="services" class="container-fluid text-center" style="background-color:#aaa">
-      <h2>SERVICES</h2>
-       <br>
-      <div class="row slideanim" >
+    <!-- Third Container (Grid) -->
+    <div id="contents" class="container-fluid bg-3 text-center" style="background-color:#ccc">
+      <div class="row">
         <div class="col-sm-4">
-          <span class="glyphicon glyphicon-eye-open"></span>
-          <h4>Find Us</h4>
-          <button type="button">Click Me!</button>
+          <p>About Us</p>
+          <img src="" class="img-responsive margin" style="width:100%" alt="Image">
         </div>
         <div class="col-sm-4">
-          <span class="glyphicon glyphicon-heart logo-small"></span>
-          <h4>LOVE</h4>
-          <p>Lorem ipsum dolor sit amet..</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
         </div>
         <div class="col-sm-4">
-          <span class="glyphicon glyphicon-lock logo-small"></span>
-          <h4>JOB DONE</h4>
-          <p>Lorem ipsum dolor sit amet..</p>
-        </div>
-      </div>
-      <br><br>
-      <div class="row slideanim">
-        <div class="col-sm-4">
-          <span class="glyphicon glyphicon-leaf logo-small"></span>
-          <h4>GREEN</h4>
-          <p>Lorem ipsum dolor sit amet..</p>
-        </div>
-        <div class="col-sm-4">
-          <span class="glyphicon glyphicon-certificate logo-small"></span>
-          <h4>CERTIFIED</h4>
-          <p>Lorem ipsum dolor sit amet..</p>
-        </div>
-        <div class="col-sm-4">
-          <span class="glyphicon glyphicon-wrench logo-small"></span>
-          <h4 style="color:#303030;">HARD WORK</h4>
-          <p>Lorem ipsum dolor sit amet..</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
         </div>
       </div>
     </div>
-
-  </div>
   </body>
+    <Footer/>
+  </div>
 </template>
 
 <script>
@@ -132,13 +103,6 @@ export default {
     content: "";
     display: table;
     clear: both;
-  }
-
-  /* Style the footer */
-  .footer {
-    background-color: #f1f1f1;
-    padding: 10px;
-    text-align: center;
   }
 
   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */

@@ -6,9 +6,9 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <navigation/>
+    <body>
  <h1>Opening times</h1>
 <p>Opening times for the cinemas are shown below.</p>
-
     <h3>Standard hours</h3>
     <TABLE width="50%" border="0" align=center>
       <TR style="font-weight:bold">
@@ -53,21 +53,23 @@
         </TR>
       </TABLE><br>
     <p>Subject to updates, all times apply throughout the year.</p>
+    </body>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import Navigation from './navigation'
+import Footer from './footer'
 export default {
   name: 'HelloWorld',
-  components: {Navigation},
+  components: {Navigation, Footer},
   data () {
     return {
     }
   }
 }
 </script>
-
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   table {
@@ -75,7 +77,6 @@ export default {
     border-collapse: collapse;
     width: 50%;
   }
-
   td, th {
     border: 1px solid #dddddd;
     text-align: left;
